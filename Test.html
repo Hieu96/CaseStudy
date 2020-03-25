@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <! tạo màu cho các thẻ>
+    <style>
+         a:visited {
+            color: #2bf0ff;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+<h1>Tieu de</h1>
+<!tạo đường kẻ ngang><hr>
+<h2>Tieu de</h2>
+<! xuống dòng> <br>
+<h3>Tieu de</h3>
+<p title="I'm to tooltip"> <! tile tạo thuộc tính>
+   This is paragraph.
+</p>
+<a href="https://google.com">google</a>
+<img src="001.PNG" alt="anh" width="300" height="300">
+
+<!thẻ pre giữ đúng định dạng>
+<pre style="color: darkblue"> <! đổi màu chữ thì cho thêm style="color: id màu">
+  Bước tới Đèo Ngang, bóng xế tà,
+  Cỏ cây chen đá, lá chen hoa.
+  Lom khom dưới núi, tiều vài chú,
+  Lác đác bên sông, chợ mấy nhà.
+  Nhớ nước đau lòng con quốc quốc,
+  Thương nhà mỏi miệng cái gia gia.
+  Dừng chân đứng lại trời, non, nước,
+  Một mảnh tình riêng ta với ta.
+</pre>
+<! thẻ tạo liên kết, target để chỉ định cách bật link> <a href="https://google.com" target="_blank">tìm kiếm</a>
+<!dùng ảnh làm liên kết> <a href="http://bob.codegym.vn/home" target="_blank">
+    <img src="Capture.PNG"
+    stype="border:0">
+</a> <! Chú ý: Thuộc tính border:0; để IE9 (và các phiên bản trước đó) không hiển thị một đường viền xung quanh ảnh khi dùng ảnh làm liên kết>
+<! dùng liên kết để tạo 1 dấu trang> <p><a href="#C2">Jumb to chapter 2</a></p>
+<p><a href="#C3">Jumb to chapter 2</a></p>
+<p><a href="http://bob.codegym.vn/clean-code#C6" target="_blank">Go to chapter 3</a></p>
+<h2>Chapter 1</h2>
+<p>This is explians ba bla bla</p>
+
+<h2 id="C2">Chapter 2</h2>
+<p>This is explians ba bla bla</p>
+
+<h2 id="C3">Chapter 3</h2>
+<p>This is explians ba bla bla</p>
+
+<img src="001.PNG" alt="Mr. Bob" style="height:200px">
+<! thêm ảnh img src="url" alt="some_text" style="width:width;height:height;" alt thay thế khi hỏng
+            img src="ủl" alt="some-text" width="x" heigh="y"
+Thuộc tinh stype không bị các css khác điều khiển>
+<! ảnh động> <img src="https://pixelsbyumair.files.wordpress.com/2014/12/cssgif.gif"
+                  alt="Computer Man" style="width:250px;height:250px;">
+<! đặt vị chí cho ảnh dùng css float
+<p><img src="001.PNG"
+        alt="Smiley face" style="float:right;width:42px;height:42px;">
+    The image</p>
+<br/>
+<p><img src="001.PNG"
+        alt="Smiley face" style="float:left;width:42px;height:42px;">
+    The image</p>
+<! bản đồ ảnh
+<body style="background-color:#272780;">
+
+<img src="http://bob.codegym.vn/assets/images/Codegym-bob-xh100.png"
+     alt="Codegym map" usemap="#codegymmap" style="width:360px;height:126px;">
+
+<map name="codegymmap">
+    <area shape="rect" coords="0,0,262,126" alt="Codegym"
+          href="http://codegym.vn"   target="_blank">
+    <area shape="circle" coords="300,58,38" alt="Codegy Bob"
+          href="http://bob.codegym.vn"   target="_blank">
+</map>
+
+</body>
+</body>
+</html>
