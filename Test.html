@@ -6,7 +6,7 @@
     <! tạo màu cho các thẻ>
     <style>
          a:visited {
-            color: #2bf0ff;
+            color: #ff22af;
             background-color: transparent;
             text-decoration: none;
         }
@@ -15,9 +15,32 @@
             background-color: transparent;
             text-decoration: underline;
         }
+         ul {
+             list-style-type: none;
+             margin: 0;
+             padding: 0;
+             overflow: hidden;
+             background-color: #dddddd;
+         }
+
+         li {
+             float: left;
+         }
+
+         li a {
+             display: block;
+             color: #212121;
+             text-align: center;
+             padding: 20px;
+             text-decoration: none;
+         }
+
+         li a:hover {
+             background-color: #111111;
+         }
     </style>
 </head>
-<body>
+<body style="background-color:#949494;"> <! style=:background-color: mã màu" chỉnh màu nền trang web>
 <h1>Tieu de</h1>
 <!tạo đường kẻ ngang><hr>
 <h2>Tieu de</h2>
@@ -72,7 +95,6 @@ Thuộc tinh stype không bị các css khác điều khiển>
         alt="Smiley face" style="float:left;width:42px;height:42px;">
     The image</p>
 <! bản đồ ảnh
-<body style="background-color:#272780;">
 
 <img src="http://bob.codegym.vn/assets/images/Codegym-bob-xh100.png"
      alt="Codegym map" usemap="#codegymmap" style="width:360px;height:126px;">
@@ -83,7 +105,42 @@ Thuộc tinh stype không bị các css khác điều khiển>
     <area shape="circle" coords="300,58,38" alt="Codegy Bob"
           href="http://bob.codegym.vn"   target="_blank">
 </map>
-
-</body>
+<! danh sách ko thứ tự> <ul style="color: orange; list-style: disc">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ul>
+<! danh sách có thứ dùng ol>
+<ol type="1">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+</ol>
+<! danh mucj miêu tả, dl định nghĩa 1 danh sách, dt định nghĩa thuật ngữ (tên gọi), dd miêu tả thuật ngữ>
+<dl>
+    <dt>Coffee</dt>
+    <dd>- đồ uống vị đắng</dd>
+</dl>
+<! danh sách trong danh sách>
+<ul>
+    <li>Coffee</li>
+    <li>Tea
+        <ul>
+            <li>Black tea</li>
+            <li>Gree tea</li>
+        </ul>
+    </li>
+</ul>
+<! DANH SÁCH NGANG>
+<ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about">About</a></li>
+</ul>
+<!--<p>Câu này là chú thích nên KHÔNG được hiển thị</p>
+<p>Câu này là chú thích nên KHÔNG được hiển thị</p>
+<p>Câu này là chú thích nên KHÔNG được hiển thị</p>-->
+<p>Câu này không phải chú thích nên được hiển thị</p>
 </body>
 </html>
