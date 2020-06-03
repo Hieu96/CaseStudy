@@ -25,9 +25,9 @@
             x += Math.floor(Math.random() * step) + step;
             context.lineTo(x, Math.floor(Math.random() * buffer.height / 2) + 100);
         }
-        // góc trái bản đồ
+        //căn góc dưới bên phải
         context.lineTo(buffer.width, buffer.height);
-        // góc phải bản đồ
+        //căn góc dưới bên trái
         context.lineTo(0, buffer.height);
 
         context.fillStyle = "green";
