@@ -33,11 +33,13 @@
         context.fillStyle = "green";
         context.fill();
         imageData = context.getImageData(0, 0, buffer.width, buffer.height);
+
         this.draw = function(ctx) {
             offsetX++;
             if (offsetX > width) offsetX = 0;
             ctx.drawImage(buffer, 0, 0, width, height);
         };
+        //kiểm tra vị trí cannon chạm đất ko
         this.contain = function(x, y) {
             if (!imageData) return false;
             let index = Math.floor((x + y * width) * 4 + 3);
@@ -156,13 +158,13 @@
         context.fill();
     }
     Ball.prototype.update = function() {
-        this.speedY += GRAVITY;
+        this.speedY += gravity;
         this.cx += this.speedX;
         this.cy += this.speedY;
         if (this.cx < this.minX || this.cx > this.maxX || this.cy < this.minY || this.cy > this.maxY) return true;
         return false;
     } // MAIN
-    let GRAVITY = 0.5;
+    let gravity = 0.5;
     let canvas;
     let context;
     let cannon;
